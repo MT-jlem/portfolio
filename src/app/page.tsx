@@ -11,7 +11,10 @@ export default function Home() {
   return (
     <main id="main">
       <Nav />
+      <div className="bg-blue-300 w-full">
+
       <HeroSection />
+      </div>
       <About />
       <Education />
       <Projects />
