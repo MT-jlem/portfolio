@@ -2,32 +2,36 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="flex items-center justify-around gap-10 w-full">
-        <div>
-          <div className="relative block h-[500px] w-[500px]">
-            <Image
-              src={"/profile.jpg"}
-              alt="image"
-              fill={true}
-              style={{ objectFit: "cover" }}
-              className="rounded-xl"
-            />
-          </div>
+    <section className="flex flex-col items-center gap-6 p-6 mt-12 md:flex-row md:justify-around md:gap-12 md:p-16 lg:gap-24">
+      {/* <div className="relative w-full max-w-m overflow-hidden rounded-full pb-[100%] border-4 border-gray-300 shadow-lg md:w-96 md:h-96"> */}
+      <div className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 overflow-hidden rounded-full border-4 border-gray-300 shadow-lg">
+        {" "}
+        {/* eslint-disable-next-line @next/next/no-img-element*/}
+        <img
+          src={"profile.jpg"}
+          alt="Mustapha Jlem picture"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      </div>
+      <div className="text-center md:text-left md:flex-1">
+        <h2 className="text-3xl font-bold text-gray-900 md:text-4xl lg:text-5xl">
+          Hi, I&#39;m Mustapha Jlem
+        </h2>
+        <p className="text-xl font-semibold text-gray-700 mt-2 md:text-2xl lg:text-3xl">
+          I&#39;m a Software Engineer Student
+        </p>
+        <p className="text-gray-600 mt-4 px-4 md:px-0 md:text-lg lg:text-xl">
+          I enjoy coding and understanding how things work.
+        </p>
+        <div className="mt-6">
+          <button className="m-2 rounded bg-black p-3 text-white border-2 border-black transition-transform transform hover:scale-105">
+            Contact
+          </button>
+          <button className="m-2 rounded border-black border-2 p-3 text-black transition-transform transform hover:scale-105">
+            Resume
+          </button>
         </div>
-        <div className="">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Repellendus cumque maxime illum eum necessitatibus possimus
-            inventore sequi, quo molestias fugiat tenetur explicabo quia beatae!
-            Provident cupiditate at magni quidem repudiandae. Lorem ipsum dolor,
-            sit amet consectetur adipisicing elit. Repellendus cumque maxime
-            illum eum necessitatibus possimus inventore sequi, quo molestias
-            fugiat tenetur explicabo quia beatae! Provident cupiditate at magni
-            quidem repudiandae.
-          </p>
-          <button>Contact</button>
-          <button>Resume</button>
-        </div>
+      </div>
     </section>
   );
 }
