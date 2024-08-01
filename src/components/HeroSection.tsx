@@ -18,7 +18,7 @@ export default function HeroSection() {
           Hi, I&#39;m Mustapha Jlem
         </h2>
         <p className="text-xl font-semibold text-gray-700 mt-2 md:text-2xl lg:text-3xl">
-          I&#39;m a Software Engineer Student
+          I&#39;m a Software Engineer
         </p>
         <p className="text-gray-600 mt-4 px-4 md:px-0 md:text-lg lg:text-xl">
           I enjoy coding and understanding how things work.

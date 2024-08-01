@@ -11,7 +11,7 @@ export default function Home() {
     <main id="main" className="flex flex-col items-center justify-center">
       <HeroSection />
       <About />
-      <Education />
+      {/* <Education /> */}
       <Projects />
       <Contact />
       <Footer />

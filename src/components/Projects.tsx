@@ -3,33 +3,32 @@ import React from "react";
 export default function Projects() {
   const projects = [
     {
-      title: "Project One",
+      title: "Mini Docker Project",
       description:
-        "A brief description of the project goes here. It can include the tech stack, purpose, and any other relevant information.",
-      imageUrl: "/web-server.webp",
-      projectLink: "#",
+        "Created Docker-based infrastructure with custom Dockerfiles and configured services using bash scripts, running all services with Docker Compose.",
+      imageUrl: "/docker-project.png",
+      projectLink: "https://github.com/MT-jlem/inception",
     },
     {
-      title: "Project Two",
+      title: "Web Server",
       description:
-        "A brief description of the project goes here. It can include the tech stack, purpose, and any other relevant information.",
+        "Developed a custom HTTP server in C++ with NGINX-like configuration, supporting multiple HTTP methods and non-blocking I/O operations.",
       imageUrl: "/web-server.webp",
-      projectLink: "#",
+      projectLink: "https://github.com/MT-jlem/webserv",
     },
     {
-      title: "Project Two",
+      title: "Full-Stack Web Application",
       description:
-        "A brief description of the project goes here. It can include the tech stack, purpose, and any other relevant information.",
+        "Built a real-time multiplayer Pong site with NestJS, Next.js, PostgreSQL, featuring chat, user profiles, OAuth login, and two-factor authentication",
       imageUrl: "/pingPongGame.png",
-      projectLink: "#",
+      projectLink: "https://github.com/abdelbarimessah/ft_transcendence",
     },
-    // Add more projects here
   ];
 
   return (
     <section
       id="projects"
-      className="flex flex-col items-center gap-8 py-12 px-6 mt-12 md:py-16 lg:px-24"
+      className="flex flex-col items-center gap-8 py-12 px-6 md:py-16 lg:px-24"
     >
       <div>
         <h2 className="text-3xl font-bold text-gray-900 md:text-4xl lg:text-5xl underline">

@@ -2,13 +2,13 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-8 px-6 mt-12 w-full">
+    <footer className="bg-gray-900 text-white py-8 px-6  w-full">
       <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between">
         <div className="flex flex-col items-center md:items-start">
           <h2 className="text-xl font-bold mb-2">Mustapha Jlem</h2>
           <p className="text-gray-400">&copy; 2024 All rights reserved</p>
         </div>
-        <div className="flex flex-col items-center md:items-start md:flex-row">
+        <div className="flex justify-center items-center md:items-start md:flex-row">
           <a
             href="#hero"
             className="text-gray-400 hover:text-white mx-2 my-1 md:my-0"
