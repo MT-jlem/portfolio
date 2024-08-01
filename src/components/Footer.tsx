@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
         <div className="flex items-center mt-4 md:mt-0">
           <a
-            href="https://github.com"
+            href="https://github.com/MT-jlem"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white mx-2"
@@ -46,7 +46,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            href="https://twitter.com"
+            href="https://x.com/JlemMustapha"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white mx-2"
@@ -56,7 +56,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/mustapha-jlem/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white mx-2"
