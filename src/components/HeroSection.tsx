@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -25,11 +26,19 @@ export default function HeroSection() {
         </p>
         <div className="mt-6">
           <button className="m-2 rounded bg-black p-3 text-white border-2 border-black transition-transform transform hover:scale-105">
-            Contact
+            <Link href="#contact">Contact</Link>
           </button>
-          <button className="m-2 rounded border-black border-2 p-3 text-black transition-transform transform hover:scale-105">
+          {/* <button className="m-2 rounded border-black border-2 p-3 text-black transition-transform transform hover:scale-105">
             Resume
-          </button>
+          </button> */}
+          <a
+            href="/Mustapha-Jlem-Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="m-2 rounded border-black border-2 p-3 text-black transition-transform transform hover:scale-105 inline-block"
+          >
+            Resume
+          </a>
         </div>
       </div>
     </section>
