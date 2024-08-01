@@ -60,13 +60,13 @@ export default function Nav() {
               About
             </Link>
           </li>
-          <li className="p-3 hover:bg-slate-100 hover:rounded">
+          {/* <li className="p-3 hover:bg-slate-100 hover:rounded">
             <Link href="#education" onClick={() => setMenu(false)}>
               Education
             </Link>
-          </li>
+          </li> */}
           <li className="p-3 hover:bg-slate-100 hover:rounded">
-            <Link href="#project" onClick={() => setMenu(false)}>
+            <Link href="#projects" onClick={() => setMenu(false)}>
               Projects
             </Link>
           </li>
