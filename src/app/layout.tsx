@@ -6,7 +6,7 @@ import Nav from "@/components/Nav";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Mustapha Jlem",
   description: "Mustapha Jlem Portfolio",
 };
 

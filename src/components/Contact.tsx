@@ -45,6 +45,7 @@ export default function Contact() {
             id="email"
             type="email"
             placeholder="Your Email"
+            required
           />
         </div>
         <div className="mb-6">
@@ -59,12 +60,13 @@ export default function Contact() {
             id="message"
             placeholder="Your Message"
             rows={5}
+            required
           ></textarea>
         </div>
         <div className="flex items-center justify-center">
           <button
             className="bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            type="button"
+            type="submit"
           >
             Send
           </button>
