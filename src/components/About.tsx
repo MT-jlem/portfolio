@@ -24,7 +24,7 @@ export default function About() {
           work together to create something fantastic!
         </p>
       </div>
-      <div className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 overflow-hidden rounded-full">
+      <div className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 overflow-hidden rounded-full hidden md:block lg:block">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <svg
           xmlns="http://www.w3.org/2000/svg"

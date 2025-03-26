@@ -25,9 +25,11 @@ export default function HeroSection() {
           I enjoy coding and understanding how things work.
         </p>
         <div className="mt-6">
-          <button className="m-2 rounded bg-black p-3 text-white border-2 border-black transition-transform transform hover:scale-105">
-            <Link href="#contact">Contact</Link>
-          </button>
+          <Link href="#contact">
+            <button className="m-2 rounded bg-black p-3 text-white border-2 border-black transition-transform transform hover:scale-105">
+              Contact
+            </button>
+          </Link>
           {/* <button className="m-2 rounded border-black border-2 p-3 text-black transition-transform transform hover:scale-105">
             Resume
           </button> */}
