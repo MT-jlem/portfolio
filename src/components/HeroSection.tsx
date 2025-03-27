@@ -34,7 +34,7 @@ export default function HeroSection() {
             Resume
           </button> */}
           <a
-            href="/Mustapha-Jlem-Resume.pdf"
+            href="/Mustapha_Jlem_Software_Engineer_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="m-2 rounded border-black border-2 p-3 text-black transition-transform transform hover:scale-105 inline-block"
