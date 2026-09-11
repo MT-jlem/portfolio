@@ -1,12 +1,10 @@
-import React from "react";
-
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-8 px-6  w-full">
-      <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between">
+    <footer className="w-full bg-slate-950 px-6 py-8 text-white">
+      <div className="container mx-auto flex flex-col items-center gap-6 md:flex-row md:justify-between">
         <div className="flex flex-col items-center md:items-start">
           <h2 className="text-xl font-bold mb-2">Mustapha Jlem</h2>
-          <p className="text-gray-400">&copy; 2024 All rights reserved</p>
+          <p className="text-slate-400">&copy; {new Date().getFullYear()} All rights reserved</p>
         </div>
         <div className="flex justify-center items-center md:items-start md:flex-row">
           <a
@@ -39,6 +37,7 @@ export default function Footer() {
             href="https://github.com/MT-jlem"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub profile"
             className="text-gray-400 hover:text-white mx-2"
           >
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -49,6 +48,7 @@ export default function Footer() {
             href="https://x.com/JlemMustapha"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="X profile"
             className="text-gray-400 hover:text-white mx-2"
           >
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -59,6 +59,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/mustapha-jlem/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
             className="text-gray-400 hover:text-white mx-2"
           >
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

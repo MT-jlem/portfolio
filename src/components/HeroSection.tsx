@@ -1,34 +1,37 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col items-center gap-6 p-6 mt-12 md:flex-row md:justify-around md:gap-12 md:p-16 lg:gap-24">
+    <section
+      id="hero"
+      className="relative isolate mx-auto mt-16 flex w-full max-w-7xl flex-col items-center gap-10 overflow-hidden bg-gradient-to-br from-white via-white to-teal-50/70 px-6 py-16 md:flex-row md:gap-16 md:px-10 md:py-24"
+    >
       {/* <div className="relative w-full max-w-m overflow-hidden rounded-full pb-[100%] border-4 border-gray-300 shadow-lg md:w-96 md:h-96"> */}
-      <div className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 overflow-hidden rounded-full border-4 border-gray-300 shadow-lg">
+      <div className="relative h-52 w-52 shrink-0 overflow-hidden rounded-full border-8 border-white shadow-2xl ring-1 ring-teal-100 md:order-2 md:h-72 md:w-72 lg:h-80 lg:w-80">
         {" "}
         {/* eslint-disable-next-line @next/next/no-img-element*/}
         <img
-          src={"profile.jpg"}
+          src="/profile.jpg"
           alt="Mustapha Jlem picture"
           className="absolute inset-0 w-full h-full object-cover"
         />
       </div>
-      <div className="text-center md:text-left md:flex-1">
-        <h2 className="text-3xl font-bold text-gray-900 md:text-4xl lg:text-5xl">
+      <div className="max-w-2xl text-center md:flex-1 md:text-left">
+        <p className="section-kicker mb-4">Software engineer · full-stack developer</p>
+        <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl lg:text-6xl">
           Hi, I&#39;m Mustapha Jlem
         </h2>
-        <p className="text-xl font-semibold text-gray-700 mt-2 md:text-2xl lg:text-3xl">
-          I&#39;m a Software Engineer
+        <p className="mt-5 text-lg leading-8 text-slate-600 md:text-xl">
+          I build thoughtful, reliable web experiences and enjoy turning complex problems into clear, useful products.
         </p>
-        <p className="text-gray-600 mt-4 px-4 md:px-0 md:text-lg lg:text-xl">
-          I enjoy coding and understanding how things work.
-        </p>
-        <div className="mt-6">
-          <Link href="#contact">
-            <button className="m-2 rounded bg-black p-3 text-white border-2 border-black transition-transform transform hover:scale-105">
+        <div className="mt-6 flex flex-wrap justify-center gap-2 md:justify-start">
+          {['TypeScript', 'Next.js', 'Node.js', 'Docker'].map((skill) => (
+            <span key={skill} className="rounded-full border border-teal-100 bg-white px-3 py-1 text-sm font-medium text-slate-600 shadow-sm">{skill}</span>
+          ))}
+        </div>
+        <div className="mt-8 flex flex-wrap justify-center gap-3 md:justify-start">
+          <Link href="#contact" className="rounded-lg bg-teal-700 px-5 py-3 font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-600 focus:ring-offset-2">
               Contact
-            </button>
           </Link>
           {/* <button className="m-2 rounded border-black border-2 p-3 text-black transition-transform transform hover:scale-105">
             Resume
@@ -37,7 +40,7 @@ export default function HeroSection() {
             href="/Mustapha_Jlem_Software_Engineer_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="m-2 rounded border-black border-2 p-3 text-black transition-transform transform hover:scale-105 inline-block"
+            className="inline-block rounded-lg border border-slate-300 bg-white px-5 py-3 font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:border-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-600 focus:ring-offset-2"
           >
             Resume
           </a>

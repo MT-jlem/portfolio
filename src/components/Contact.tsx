@@ -1,77 +1,25 @@
-import React from "react";
-
 export default function Contact() {
+  const contactLinks = [
+    { title: "LinkedIn", description: "Connect with me professionally or send me a message.", href: "https://www.linkedin.com/in/mustapha-jlem/", label: "Message on LinkedIn" },
+    { title: "GitHub", description: "Explore my code, contributions, and active projects.", href: "https://github.com/MT-jlem", label: "Visit GitHub" },
+  ];
+
   return (
-    <section
-      id="contact"
-      className="flex flex-col items-center gap-8 py-12 px-6 md:py-16 lg:px-24"
-    >
-      <div>
-        <h2 className="text-3xl font-bold text-gray-900 md:text-4xl lg:text-5xl underline">
-          Contact
-        </h2>
+    <section id="contact" className="flex w-full flex-col items-center gap-8 px-6 py-16 md:py-24 lg:px-24">
+      <div className="max-w-2xl text-center">
+        <p className="section-kicker">Let’s connect</p>
+        <h2 className="section-title mt-2">Have a project in mind?</h2>
+        <p className="mt-4 text-lg leading-8 text-slate-600">I’m always interested in thoughtful engineering challenges, new ideas, and meeting people who enjoy building useful things.</p>
       </div>
-      <div className="text-center max-w-screen-lg px-8">
-        <p className="text-gray-600 md:text-lg lg:text-xl">
-          I would love to hear from you! Whether you have a question, a project
-          idea, or just want to say hello, feel free to get in touch using the
-          form below.
-        </p>
+      <div className="grid w-full max-w-3xl gap-5 md:grid-cols-2">
+        {contactLinks.map((link) => (
+          <a key={link.title} href={link.href} target="_blank" rel="noopener noreferrer" className="group rounded-xl bg-white p-7 text-left shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-teal-600 focus:ring-offset-2">
+            <h3 className="text-xl font-bold text-slate-900">{link.title}</h3>
+            <p className="mt-2 leading-7 text-slate-600">{link.description}</p>
+            <span className="mt-5 inline-flex font-semibold text-teal-700 group-hover:text-teal-800">{link.label} <span aria-hidden="true" className="ml-2">↗</span></span>
+          </a>
+        ))}
       </div>
-      <form className="w-full max-w-lg">
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="name"
-          >
-            Name
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="name"
-            type="text"
-            placeholder="Your Name"
-          />
-        </div>
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="email"
-          >
-            Email
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="email"
-            type="email"
-            placeholder="Your Email"
-            required
-          />
-        </div>
-        <div className="mb-6">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="message"
-          >
-            Message
-          </label>
-          <textarea
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="message"
-            placeholder="Your Message"
-            rows={5}
-            required
-          ></textarea>
-        </div>
-        <div className="flex items-center justify-center">
-          <button
-            className="bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            type="submit"
-          >
-            Send
-          </button>
-        </div>
-      </form>
     </section>
   );
 }

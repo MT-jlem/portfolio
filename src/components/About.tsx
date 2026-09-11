@@ -4,34 +4,26 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex flex-col items-center gap-8 py-12 px-6  md:flex-row md:justify-around md:gap-12 md:py-16 lg:gap-24"
+      className="mx-auto flex w-full max-w-7xl flex-col items-center gap-10 px-6 py-16 md:flex-row md:gap-16 md:px-10 md:py-24"
     >
-      <div className="text-center md:text-left md:flex-1">
-        <h2 className="text-3xl font-bold text-gray-900 md:text-4xl lg:text-5xl underline">
-          About
-        </h2>
-        <p className="text-gray-600 mt-4 px-4 md:px-0 md:text-lg lg:text-xl max-w-2xl">
-          Hello, I&#39;m<strong> Mustapha Jlem!</strong> I&#39;m a Software
-          Engineering student who enjoys coding and creating exciting projects.
-          With a strong emphasis on full-stack web development, particularly
-          with new frameworks and technologies, I like developing efficient and
-          user-friendly solutions.
+      <div className="max-w-2xl text-center md:flex-1 md:text-left">
+        <p className="section-kicker">About me</p>
+        <h2 className="section-title mt-2">Curious by default. Practical by design.</h2>
+        <p className="mt-5 text-lg leading-8 text-slate-600">
+          Hello, I&#39;m <strong className="font-semibold text-slate-800">Mustapha Jlem.</strong> I’m a software engineer who enjoys building full-stack applications and learning the systems behind them. I care about clear interfaces, sound foundations, and solutions that people can rely on.
         </p>
-        <p className="text-gray-600 mt-4 px-4 md:px-0 md:text-lg lg:text-xl max-w-2xl">
-          When I&#39;m not coding, you may find me visiting new places, reading
-          tech blogs, or trying out new hobbies. I&#39;m constantly ready to
-          learn new things and interact with like-minded individuals. Let&#39;s
-          work together to create something fantastic!
+        <p className="mt-4 text-lg leading-8 text-slate-600">
+          Outside of coding, I’m usually exploring new places, reading about technology, or picking up a new hobby. I enjoy collaborating with people who are equally curious and motivated to make something worthwhile.
         </p>
       </div>
-      <div className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 overflow-hidden rounded-full hidden md:block lg:block">
+      <div className="relative hidden h-56 w-56 shrink-0 items-center justify-center rounded-3xl bg-teal-50 text-teal-700 shadow-sm ring-1 ring-teal-100 md:flex md:h-64 md:w-64 lg:h-72 lg:w-72">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="1.25em"
           height="1em"
           viewBox="0 0 640 512"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="h-24 w-24"
         >
           <path
             fill="currentColor"
