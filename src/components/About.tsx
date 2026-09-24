@@ -17,7 +17,6 @@ export default function About() {
         </p>
       </div>
       <div className="relative hidden h-56 w-56 shrink-0 items-center justify-center rounded-3xl bg-teal-50 text-teal-700 shadow-sm ring-1 ring-teal-100 md:flex md:h-64 md:w-64 lg:h-72 lg:w-72">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="1.25em"
